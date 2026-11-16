@@ -1,2 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qr-serverless"
+version = "0.1.0"
+dependencies = [
+    "qrcode[pil]>=7.4.2",
+    "Pillow>=10.4.0"
+]
+
 [tool.vercel]
 entrypoint = "api.generate:handler"
